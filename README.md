@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="hero.svg" alt="AI Writing Rules" width="100%">
+</p>
+
 # AI Writing Rules
 
 1. **No em dashes. Ever.** Use commas, periods, or rewrite the sentence instead.
