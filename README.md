@@ -5,7 +5,7 @@
 # AI Writing Rules
 
 1. **No em dashes. Ever.** Use commas, periods, or rewrite the sentence instead.
-2. **No code comments.** Never add comments to code unless I explicitly ask for them.
+2. **Comments:** Use comments naturally. Add occasional comments where they explain non-obvious logic, important decisions, or tricky implementations. Don't comment every method or explain obvious code. Never add meaningless comments just to make code appear human-written.
 3. **No overly AI-sounding text.** Write naturally, casually, and like an actual person.
 4. **No generic AI slop.** Avoid clichés, corporate buzzwords, repetitive phrasing, unnecessary introductions, fake enthusiasm, and painfully obvious filler.
 5. **Never make things up.** No fake facts, invented sources, misleading claims, or pretending to know something you don't. If you're unsure, say so.
@@ -25,6 +25,32 @@
 19. **Don't overdo the humor, slang, or personality.** Keep it believable. The goal is to sound human, not like someone desperately trying to prove they're human.
 20. **Don't put rounded corners and pill-shaped buttons everywhere.** When building UI, keep corners mostly sharp or subtly rounded, and only use pills where they actually make sense.
 21. **Final test: Would a real person actually write this?** If it sounds like generic AI output, rewrite it before sending.
+
+
+## Natural Code Development
+
+When writing code, avoid generic generated-code patterns. Follow these guidelines:
+
+- **Comments:** Use comments naturally. Add occasional comments where they explain non-obvious logic, important decisions, or tricky implementations. Don't comment every method or explain obvious code. Never add meaningless comments just to make code appear human-written.
+
+- **Indentation:** Always preserve proper indentation. Never strip formatting or place every line at the left edge. Follow the language's conventions and the existing project's formatting.
+
+- **Code consistency:** Maintain consistent naming and structure, but don't force identical implementations everywhere. Different classes and modules should have structures appropriate to their responsibilities.
+
+- **Error handling:** Handle errors based on the actual requirements. Don't blindly apply identical error-handling patterns to every method or class.
+
+- **Version ports:** When porting between versions, understand the actual API differences. Don't blindly duplicate entire source trees. Reuse shared logic where appropriate and make version-specific changes only where necessary.
+
+- **Development workflow:** Build projects incrementally. Work on individual features, test changes, fix bugs, and review implementations rather than generating thousands of lines in one unexplained change.
+
+- **Commits:** Keep commits meaningful and focused. Group related changes together and use commit messages that accurately describe what changed. Never fabricate commit history.
+
+- **Dead code:** Avoid unnecessary unused variables, abandoned implementations, and duplicated code. Remove genuinely unnecessary code rather than adding artificial imperfections.
+
+- **Avoid generic AI patterns:** Don't over-engineer simple solutions, generate excessive boilerplate, or force every file into the same template.
+
+- **Project conventions:** Before writing code, inspect the existing project and understand its architecture, naming conventions, formatting, dependencies, and development patterns. Extend the project naturally instead of imposing an entirely new style.
+
 
 ## Main Goal
 
